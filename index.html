@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acuario</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+</head>
+<body>
+
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">Catálogo</a>
+    <a href="#">Administradores</a>
+    <a href="#">Usuarios</a>
+    <a href="#">Contacto</a>
+    <a href="#">Salir</a>
+  </div>
+
+  <div class="main">
+    <div class="carrusel">
+
+      <div class="contenedor-imagen">
+        <img class="slider-item" src="/imagenes/bomba.webp" alt="bomba">
+      </div>
+      <div class="contenedor-imagen">
+        <img class="slider-item" src="/imagenes/lampara.webp" alt="lampara">
+      </div>
+      <div class="contenedor-imagen">
+        <img class="slider-item" src="/imagenes/luz-led.webp" alt="luz-led">
+      </div>
+      <div class="contenedor-imagen">
+        <img class="slider-item" src="/imagenes/filtro.webp" alt="filtro">
+      </div>
+      <div class="contenedor-imagen">
+        <img src="/imagenes/peces-artificiales.webp" alt="peces-artificiales" class="slider-item">
+      </div>
+      <div class="contenedor-imagen">
+        <img src="/imagenes/pez1.jpeg" alt="pez1" class="slider-item">
+      </div>
+      
+    </div> <!-- carrusel -->
+
+    <div class="inventario">
+      <h2>inventario</h2>
+    </div>
+  </div> <!-- main -->
+
+<script>
+  var slideIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slider-item");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+  }
+  </script> 
+
+</body>
+
+</html>
