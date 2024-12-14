@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acuario</title>
+  <link rel="stylesheet" href="acuario.css">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+</head>
+<body>
+<div class="container">
+  
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Catálogo</a>
+      <a href="#">Administradores</a>
+      <a href="#">Usuarios</a>
+      <a href="#">Contacto</a>
+      <a href="#">Salir</a>
+    </div>
+
+    <div class="cont-carrusel">
+      <div class="carrusel">
+
+        <div class="contenedor-imagen">
+          <figure>
+            <img class="slider-item" src="/imagenes/bomba.webp" alt="bomba">
+          </figure>
+
+           <figure> 
+            <img class="slider-item" src="/imagenes/lampara.webp" alt="lampara">
+          </figure>
+
+          <figure>
+            <img class="slider-item" src="/imagenes/luz-led.webp" alt="luz-led">
+          </figure>
+        
+          <figure>
+            <img class="slider-item" src="/imagenes/filtro.webp" alt="filtro">
+          </figure>
+
+          <figure>
+            <img src="/imagenes/peces-artificiales.webp" alt="peces-artificiales" class="slider-item">
+          </figure>
+
+          <figure>
+            <img src="/imagenes/pez1.jpeg" alt="pez1" class="slider-item">
+          </figure>
+        </div>
+    </div>
+    </div>
+  
+  <!-- ----------------------------------------------------------------------------------- -->
+   <!-- INVENTARIO -->
+    <div class="inventario">
+      <div class="tabla">
+      <table>
+        <tr>
+          <th colspan="4" id="titTab">Almacen</th>
+          <!-- <td></td>
+          <td></td>
+          <td></td> -->
+        </tr>
+
+        <tr>
+          <th id="numero">
+            <form action="">
+              <label for="">#</label>
+              <select name="" id="numSel"></select>
+            </form>
+          </th>
+          
+          <th id="articulo">
+            <form action="">
+              <label for=""> Artículo</label>
+              <select name="" id="artSel"></select>  
+            </form>
+            </th>
+          
+            <th>
+              <form action="">
+                <label for="">Cantidad</label>
+                <select name="" id="canSel"></select>
+              </form>
+            </th>
+            
+            <th>
+              <form action="">
+                <label for="">Unidad</label>
+                  <select name="" id="uniSel"></select>
+              </form>
+            </th>
+
+        </tr>
+
+        <tr id="fila1">
+          <td>1</td>
+          <td>Peceras 50L</td>
+          <td>20</td>
+          <td>Pieza</td>
+        </tr>
+
+        <tr id="fila2">
+          <td>2</td>
+          <td>Alimento Hojuelas</td>
+          <td>26</td>
+          <td>Bote</td>
+        </tr>
+
+        <tr id="fila3">
+          <td>3</td>
+          <td>Bombas de aire 50w</td>
+          <td>15</td>
+          <td>Pieza</td>
+        </tr>
+
+        <tr id="fila4">
+          <td>4</td>
+          <td>Red chica</td>
+          <td>8</td>
+          <td>Pieza</td>
+        </tr>
+        
+        <tr id="fila5">
+          <td>5</td>
+          <td>Piedra de colores</td>
+          <td>10</td>
+          <td>Bolsa</td>
+        </tr>
+
+        <tr id="fila6">
+          <td>6</td>
+          <td>Piedra natural</td>
+          <td>6</td>
+          <td>Bolsa</td>
+        </tr>
+
+        <tr id="fila7">
+          <td>7</td>
+          <td>Piedra caliza adorno</td>
+          <td>25</td>
+          <td>Pieza</td>
+        </tr>
+
+        <tr id="fila8">
+          <td>8</td>
+          <td>Manguera 1m</td>
+          <td>14</td>
+          <td>Pieza</td>
+        </tr>
+
+        <tr id="fila9">
+          <td>9</td>
+          <td>Lámpara 35w</td>
+          <td>5</td>
+          <td>Pieza</td>
+        </tr>
+
+        <tr id="fila10">
+          <td>10</td>
+          <td>Azul de metileno</td>
+          <td>24</td>
+          <td>Botella</td>
+        </tr>
+        
+      </table>
+      </div>
+    </div> <!-- inventario -->
+  
+</div>
+  <script src="acuario.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --menu: #a8cfdb;
+  --menu-text: blue;
+  --carrusel: #cddaf7;
+  --inventario: #c4e1f5;
+  --fila-azul: #7c7cf5;
+  --fila-blanca: white;
+  --tit-Tab: #7c7cf5;
+  --fil-Hov: #c9c4c4;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+    'menu carrusel carrusel carrusel carrusel'
+    'menu carrusel carrusel carrusel carrusel'
+    'menu inventario inventario inventario inventario'
+    'menu inventario inventario inventario inventario'
+    ;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* MENU */
+.menu {
+  /* border: 1px solid; */
+  background-color: var(--menu);
+  grid-area: menu;
+  height: 100vh;
+  width: 16vw;
+  position: fixed;
+  z-index: 1;
+}
+
+.menu a {
+  padding: 15px 8px 6px 26px;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--menu-text);
+  display: block;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* CARRUSEL */
+
+.cont-carrusel {
+  /* border: 1px solid; */
+  background-color: var(--carrusel);
+  grid-area: carrusel;
+  height: 50vh;
+  width: 84vw;
+  margin-left: auto;
+}
+
+.carrusel {
+  /* border: 1px solid orange; */
+  margin: 30px auto;
+  width: 500px;
+  height: 45vh;
+}
+
+.contenedor-imagen {
+  /* border: 1px solid red; */
+  width: 500px;
+  height:44.7vh ;
+}
+
+.slider-item {
+  width: 500px;
+  height: 287.45px;
+  object-fit: fill;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* INVENTARIO */
+
+.titTab {
+  background-color: var(--tit-Tab);
+}
+
+.inventario {
+  /* border: 1px solid; */
+  background-color: var(--inventario);
+  grid-area: inventario;
+  height: 50vh;
+  width: 84vw;
+  margin-left:auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.tabla {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+table {
+  box-sizing: border-box;
+  text-align: center;
+  width: 60vw;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid;
+}
+
+#fila1:hover {
+  background-color: var(--fil-Hov);
+}
+
+#fila2:hover {
+  background-color: var(--fil-Hov);
+}
+
+#fila3:hover {
+  background-color: var(--fil-Hov);
+}
+
+#fila4:hover {
+  background-color: var(--fil-Hov);
+}
+
+#fila5:hover {
+  background-color: var(--fil-Hov);
+}
+
+#fila6:hover {
+  background-color: var(--fil-Hov);
+}
+
+#fila7:hover {
+  background-color: var(--fil-Hov);
+}
+
+#fila8:hover {
+  background-color: var(--fil-Hov);
+}
+
+#fila9:hover {
+  background-color: var(--fil-Hov);
+}
+
+#fila10:hover {
+  background-color: var(--fil-Hov);
+}
+
+tr:nth-child(2n) {
+  background-color: var(--fila-azul);
+}
+
+form {
+  /* border: 1px solid pink; */
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+label {
+  /* border: 1px solid red; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+select {
+  border: 1px solid green;
+}
+
+
+
+
+
+
