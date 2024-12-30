@@ -1,0 +1,124 @@
+
+.col-md-4{
+  max-width: 19%;
+}
+
+.list-unstyled {
+  text-align: center;
+  /* justify-content: center; */
+  margin-top: 10px;
+}
+
+.text-light a {
+display: block;
+padding: 10px;
+}
+
+
+
+.link:hover {
+  background-color: #f0ebeb;
+  color: black;
+}
+
+
+
+.carousel-inner{
+  margin: auto;
+  max-width: 800px;
+  max-height: 500px;
+}
+
+.carousel-item {
+  border: 1px solid #187bdd;
+  max-width: 800px;
+  max-height: 500px;
+  box-sizing: border-box;
+}
+
+img{
+  height: 450px;
+}
+
+.titulo-diapositiva, .carousel-caption  {
+  color: rgba(226, 10, 10, 0.527);
+  font-size: 1.9rem;
+  font-weight: bold;
+
+}
+
+ .container-base-datos-inventario{
+  display: inline-flex;
+} 
+
+/* .container-base-datos-contactos{
+  float: right;
+} */
+
+.contenedor-contactos{
+  float: right;
+  /* padding-right: 0; */
+  text-align: center;
+}
+
+.table-inventario{
+  margin-right: auto;
+  text-align: center;
+  width: 40vw;
+}
+
+.table-inventario th{
+  background-color: #1e8cbe;
+  color: #fff;
+}
+
+.table-contactos th{
+  background-color: #1e8cbe;
+  color: #fff;
+}
+
+
+tbody tr:nth-child(odd) {
+  background-color: #b3dcf0;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+table tr:hover{
+  background-color: rgba(122, 123, 155, 0.418);
+  cursor: pointer;
+} 
+
+.table-contactos{
+  /* float: right; */
+  margin-left: auto;
+  text-align: center;
+  width: 40vw;
+}
+
+td {
+  padding: 1px 3px 1px 3px;
+  margin: auto 5px auto 5px;
+}
+
+/* .base-datos{
+  margin-left: auto;
+  padding-right: 0;
+  float: right;
+} */
+
+@media screen and (max-width: 850px) {
+  .text-decoration-none {
+    font-size: .9rem;
+  }
+
+  .col-sm-3 {
+    width: 28%;
+  }
+  
+}
+
+
+  
